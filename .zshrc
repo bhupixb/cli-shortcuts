@@ -145,6 +145,12 @@ source ~/not-afraid-custom/k8s.sh
 source ~/not-afraid-custom/alias.sh
 source ~/not-afraid-custom/common.sh
 
+# store more history
+#set history size
+export HISTSIZE=10000
+#save history after logout
+export SAVEHIST=10000
+
 #### FIG ENV VARIABLES ####
 # Please make sure this block is at the end of this file.
 #[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
@@ -152,3 +158,4 @@ source ~/not-afraid-custom/common.sh
 source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 export PATH="/usr/local/opt/maven@3.3/bin:$PATH"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+eval $(thefuck --alias)
